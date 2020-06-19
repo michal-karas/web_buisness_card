@@ -1,0 +1,118 @@
+body {
+  margin: 20px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Tahoma', sans-serif;
+}
+
+body .container {
+  height: 550px;
+  width: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #7d00e4, #ff006a);
+}
+
+body .container .wrapper img {
+  position: relative;
+  z-index: 100;
+  margin: 30px auto;
+  border-radius: 50%;
+  display: block;
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px solid #fff;
+}
+
+body .container .wrapper .text {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+}
+
+body .container .wrapper .text .name {
+  font-size: 24px;
+  color: #fff;
+  padding: 0 0 10px 0;
+}
+
+body .container .wrapper .text .location {
+  font-size: 16px;
+  color: #fff;
+  padding: 0 0 10px 0;
+}
+
+body .container .content {
+  text-align: center;
+}
+
+body .container .content p {
+  padding: 5px 0 20px 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+body .container .content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .content .buttons .button {
+  height: 40px;
+  width: 130px;
+  margin: 0 auto;
+}
+
+body .container .content .buttons .button button {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .container .content .buttons .button button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .container .media {
+  position: relative;
+  margin-top: -500px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+body .container .media li {
+  height: 40px;
+  width: 40px;
+}
+
+body .container .media a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  font-size: 25px;
+  color: #fff;
+}
+
+body .container .media a span {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body .container .media a span:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */
