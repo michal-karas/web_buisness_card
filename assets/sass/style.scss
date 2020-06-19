@@ -5,27 +5,36 @@ body {
     font-family: 'Tahoma', sans-serif;
 
     .container {
-        height: 550px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         overflow: hidden;
         margin: 0 auto;
-        border-radius: 5px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
         background: linear-gradient(45deg, #7d00e4, #ff006a);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 
         .wrapper {
 
             img {
                 position: relative;
                 z-index: 100;
-                margin: 30px auto;
+                margin: 20px auto;
                 border-radius: 50%;
                 display: block;
                 height: 200px;
                 width: 200px;
                 object-fit: cover;
-                border: 5px solid #fff;
+                border: 3px solid #fff;
+                transition: all 0.3s ease;
+            }
 
-
+            img.active {
+                height: 550px;
+                width: 350px;
+                margin: 0px auto;
+                border: none;
+                border-radius: 5px;
             }
 
             .text {
@@ -86,14 +95,18 @@ body {
 
         .media {
             position: relative;
-            margin-top: -500px;
+            margin-top: -470px;
             list-style: none;
-            margin-left: 10px;
+
 
             li {
                 height: 40px;
                 width: 40px;
+                margin-left: -100px;
+                opacity: 0;
+                transition: all 0.5s ease;
             }
+
 
             a {
                 height: 100%;
@@ -102,6 +115,7 @@ body {
                 font-size: 25px;
                 color: #fff;
 
+
                 span {
                     position: relative;
                     transition: all 0.3s;
@@ -109,8 +123,29 @@ body {
 
                 span:hover {
                     transform: scale(1.2);
+
                 }
             }
+        }
+    }
+
+    .container:hover {
+        height: 550px;
+        width: 350px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+
+        .media li {
+            margin-left: 20px;
+            opacity: 1;
+        }
+
+        .media li:nth-child(2) {
+            transition-delay: 0.2s;
+        }
+
+        .media li:nth-child(3) {
+            transition-delay: 0.4s;
         }
     }
 }

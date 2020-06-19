@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <div class="wrapper">
-            <a href="#" alt=""><img src="assets/img/mk.png"></a>
+            <a href="#"><img src="assets/img/mk.png" alt=""></a>
             <div class="text">
                 <div class="name">Michał Marian Karaś</div>
                 <div class="location">Poland, Cracow</div>
@@ -22,19 +22,27 @@
             <p>User Interface Designer and <br>Front-end Developer</p>
             <div class="buttons">
                 <div class="button">
-                    <button>Message</button>
+                    <a href="mailto:info@michalkaras.eu" target="blank"><button>Message</button></a>
                 </div>
                 <div class="button">
-                    <button>Following</button>
+                    <button>My CV</button>
                 </div>
             </div>
         </div>
         <div class="media">
-            <li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-            <li><a href="#"><span class="fa fa-github"></span></a></li>
-            <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            <li><a href="https://www.facebook.com/michal.m.karas/" target="blank"><span
+                        class="fa fa-facebook-f"></span></a></li>
+            <li><a href="https://github.com/michal-karas" target="blank"><span class="fa fa-github"></span></a></li>
+            <li><a href="https://www.linkedin.com/in/michalmkaras/" target="blank"><span
+                        class="fa fa-linkedin"></span></a></li>
         </div>
     </div>
+    <script>
+        const img = document.querySelector("img");
+        img.onclick = function () {
+            this.classList.toggle("active")
+        }
+    </script>
 </body>
 
 </html>

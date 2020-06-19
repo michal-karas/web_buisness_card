@@ -7,25 +7,39 @@ body {
 }
 
 body .container {
-  height: 550px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background: linear-gradient(45deg, #7d00e4, #ff006a);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 body .container .wrapper img {
   position: relative;
   z-index: 100;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 50%;
   display: block;
   height: 200px;
   width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .container .wrapper img.active {
+  height: 550px;
+  width: 350px;
+  margin: 0px auto;
+  border: none;
+  border-radius: 5px;
 }
 
 body .container .wrapper .text {
@@ -87,14 +101,17 @@ body .container .content .buttons .button button:hover {
 
 body .container .media {
   position: relative;
-  margin-top: -500px;
+  margin-top: -470px;
   list-style: none;
-  margin-left: 10px;
 }
 
 body .container .media li {
   height: 40px;
   width: 40px;
+  margin-left: -100px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 body .container .media a {
@@ -114,5 +131,28 @@ body .container .media a span {
 body .container .media a span:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+body .container:hover {
+  height: 550px;
+  width: 350px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+
+body .container:hover .media li {
+  margin-left: 20px;
+  opacity: 1;
+}
+
+body .container:hover .media li:nth-child(2) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+body .container:hover .media li:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 /*# sourceMappingURL=style.css.map */
